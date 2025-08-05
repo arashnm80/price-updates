@@ -25,7 +25,7 @@ def save_prices(data):
     # Structure selon ton format
     result = {
         "date": date,
-        "USD": usd_price
+        "USD": usd_price,
         "EUR": eur_price
     }
 
