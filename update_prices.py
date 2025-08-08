@@ -6,7 +6,7 @@ from datetime import datetime
 API_URL = "https://sarfe.erfjab.com/prices"
 
 # Chemin vers ton fichier JSON
-PRICES_FILE = "prices2.json"
+PRICES_FILE = "prices.json"
 
 def fetch_prices():
     response = requests.get(API_URL, headers={"accept": "application/json"})
