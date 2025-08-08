@@ -36,7 +36,7 @@ jobs:
       run: |
         git config user.name "Arash Nemat Zadeh"
         git config user.email "arashnm80@gmail.com"
-        git add prices2.json
+        git add prices.json
         git commit -m "Update prices.json [automated]" || echo "No changes to commit"
         git remote set-url origin https://x-access-token:${GITHUB_TOKEN}@github.com/${{ github.repository }}
         git push origin HEAD
