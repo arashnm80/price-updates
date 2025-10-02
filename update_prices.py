@@ -3,7 +3,7 @@ import json
 from datetime import datetime
 
 # URL de l'API
-API_URL = "https://sarfe.erfjab.com/prices"
+API_URL = "https://sarfe.erfjab.com/api/prices"
 
 # Chemin vers ton fichier JSON
 PRICES_FILE = "prices.json"
