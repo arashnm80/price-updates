@@ -17,7 +17,7 @@ def save_prices(data):
     # Extraire les données nécessaires
     usd_price = data.get("usd1")
     eur_price = data.get("eur1")
-    timestamp = data.get("last_modified")
+    last_modified = data.get("last_modified")
 
     # Structure selon ton format
     result = {
