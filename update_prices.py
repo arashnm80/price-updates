@@ -15,16 +15,13 @@ def fetch_prices():
 
 def save_prices(data):
     # Extraire les données nécessaires
-    usd_price = data.get("usd")
-    eur_price = data.get("eur")
-    timestamp = data.get("created_at")
-    
-    # Convertir en format YYYY-MM-DD
-    date = timestamp.split("T")[0] if timestamp else datetime.now().strftime("%Y-%m-%d")
+    usd_price = data.get("usd1")
+    eur_price = data.get("eur1")
+    timestamp = data.get("last_modified")
 
     # Structure selon ton format
     result = {
-        "date": date,
+        "last_modified": last_modified,
         "USD": usd_price,
         "EUR": eur_price
     }
